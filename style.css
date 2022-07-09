@@ -87,3 +87,20 @@ button:hover {
     border-radius: 0.4rem;
     font-weight: bold;
 }
+
+.loader {
+    width: 24px;
+    height: 24px;
+    border: 3px dotted white;
+    border-radius: 100%;
+    animation: roll-in-right infinite 0.4s;
+}
+
+@keyframes roll-in-right {
+    from {
+        transform: rotate3d(0, 0, 1, 120deg);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

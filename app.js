@@ -11,7 +11,7 @@ form.onsubmit = function(event) {
 }
 
 function Loading(isLoading) {
-    submit.innerHTML = isLoading ? "<img src='loader.gif' width='20' height='20'/>" : "Enviar";
+    submit.innerHTML = isLoading ? "<div class='loader'></div>" : "Enviar";
 }
 
 async function enviarSms(to, message) {
